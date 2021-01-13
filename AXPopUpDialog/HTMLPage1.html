@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function OpenModeless() {
+            if (window.showModelessDialog) {        // Internet Explorer
+                showModelessDialog("QRMS.aspx", window, "dialogWidth:400px; dialogHeight:500px");
+            }
+            else {
+                window.open("QRMS.aspx", "", "width=550, height=500, alwaysRaised=yes");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="test_button" onclick="OpenModeless();" value="test button">test button</button>
+</body>
+</html>
